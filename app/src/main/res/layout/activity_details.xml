@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2c5b95"
+    tools:context=".DetailsActivity">
+
+
+    <ImageView
+        android:id="@+id/detailsFoodIV"
+        android:layout_width="0dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="10dp"
+        android:paddingBottom="10dp"
+        android:src="@drawable/cig_kofte"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/detailsFoodName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="İçli Köfte"
+        android:textColor="@color/white"
+        android:layout_marginTop="40dp"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/detailsFoodIV"/>
+
+    <TextView
+        android:id="@+id/detailsFoodExplain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:text="İçli Köfte Aslen Levant mutfağına ait olan bu yemeğe kibbe ve bazı yörelerde dolgulu köfte de deniliyor. İçli köfte, iki türlü hazırlanır. Bunlardan birincisi haşlama usulüdür. Bayram, söz, nişan, kına gecesi gibi özel günler ile misafir ağırlamada mutlaka sofradaki yerini alır."
+        android:layout_marginStart="7dp"
+        android:layout_marginEnd="7dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/detailsFoodName"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
